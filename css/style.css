@@ -1,0 +1,256 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1C1E23;
+}
+
+.header__top-inner {
+  border-bottom: 1px solid #E4E4E4;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #303236;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.phone__link {
+  display: flex;
+  align-items: center;
+}
+
+.phone__img {
+  margin-right: 7px;
+}
+
+.header__top-sci {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.header__top-sci-link {
+  display: inline-block;
+}
+
+.header__top-sci-link + .header__top-sci-link {
+  margin-left: 25px;
+}
+
+.header__top-sci-img {
+  width: 20px;
+  display: block;
+}
+
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.logo__link {
+  display: block;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__item + .menu__item {
+  margin-left: 62px;
+}
+
+.menu__item-link {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #303236;
+}
+
+.hero {
+  background-color: #EEF3ED;
+}
+
+.hero__inner {
+  display: flex;
+}
+
+.hero__inner-span {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #9EA0A5;
+  margin-top: 130px;
+}
+
+.hero__inner-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #1C1E23;
+  margin-top: 5px;
+}
+
+.hero__inner-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #303236;
+  margin-top: 24px;
+}
+
+.btn-registration {
+  display: inline-block;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #44BF39;
+  padding: 18px 30px;
+  margin-right: 29px;
+}
+
+.btn-more {
+  display: inline-block;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #44BF39;
+  background-color: transparent;
+  padding: 18px 41px;
+  border: 1px solid #44BF39;
+}
+
+.hero__inner-img {
+  margin-top: 65px;
+  margin-right: -45px;
+}
+
+.indicators {
+  position: relative;
+}
+
+.indicators__inner {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  box-shadow: -1px 1px 2px rgba(67, 70, 74, 0.0001), -2px 2px 5px rgba(67, 86, 100, 0.123689);
+  border-radius: 4px;
+  padding: 42px 86px;
+}
+
+.indicators-item {
+  text-align: center;
+  width: 160px;
+}
+
+.indicators-item + .indicators-item {
+  margin-left: 60px;
+}
+
+.indicators-number {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #44BF39;
+  margin-bottom: 20px;
+}
+
+.indicators-text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1C1E23;
+}
+
+@media (max-width: 1110px) {
+  .indicators__inner {
+    position: relative;
+  }
+}
+
+@media (max-width: 910px) {
+  .menu__list {
+    display: none;
+  }
+  .hero__inner {
+    flex-wrap: wrap;
+  }
+  .hero__inner-span {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 667px) {
+  .indicators__inner {
+    flex-wrap: wrap;
+    padding: 0;
+    bottom: 40vh;
+  }
+  .indicators-item + .indicators-item {
+    margin: 15px auto;
+  }
+  .indicators-item {
+    margin: 30px auto 0;
+  }
+  .hero__inner-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .indicators__inner {
+    flex-direction: column;
+  }
+  .logo__img {
+    width: 100%;
+  }
+  .hero__inner-title {
+    font-size: 34px;
+  }
+}
